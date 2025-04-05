@@ -1,8 +1,4 @@
-/*
-  Set any config.h overrides for your specific keymap here.
-  See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
-*/
-
+#define CHORDAL_HOLD
 #undef TAPPING_TERM
 #define TAPPING_TERM 220
 
@@ -12,7 +8,7 @@
 #define RGB_MATRIX_TIMEOUT 300000
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "JqNpm/jZlLeY"
+#define SERIAL_NUMBER "JqNpm/Kr06XL"
 #define LAYER_STATE_8BIT
 #define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
 
@@ -38,6 +34,7 @@
 #undef ENABLE_RGB_MATRIX_DUAL_BEACON
 #undef ENABLE_RGB_MATRIX_RAINBOW_BEACON
 #undef ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
+#undef ENABLE_RGB_MATRIX_FLOWER_BLOOMING
 #undef ENABLE_RGB_MATRIX_RAINDROPS
 #undef ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
 #undef ENABLE_RGB_MATRIX_HUE_BREATHING
@@ -60,6 +57,10 @@
 #undef ENABLE_RGB_MATRIX_MULTISPLASH
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 #undef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+#undef ENABLE_RGB_MATRIX_STARLIGHT
+#undef ENABLE_RGB_MATRIX_STARLIGHT_DUAL_HUE
+#undef ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT
+#undef ENABLE_RGB_MATRIX_RIVERFLOW
 
 
 
