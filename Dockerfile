@@ -1,4 +1,4 @@
-FROM debian:latest@sha256:b6507e340c43553136f5078284c8c68d86ec8262b1724dde73c325e8d3dcdeba
+FROM debian:latest@sha256:6d87375016340817ac2391e670971725a9981cfc24e221c47734681ed0f6c0f5
 
 RUN apt update && apt install -y git python3 python3-pip sudo
 
