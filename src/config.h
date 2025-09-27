@@ -1,14 +1,11 @@
 #define CHORDAL_HOLD
-#undef TAPPING_TERM
-#define TAPPING_TERM 220
-
 #define PERMISSIVE_HOLD
 
 #undef RGB_MATRIX_TIMEOUT
 #define RGB_MATRIX_TIMEOUT 300000
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "JqNpm/Kr06XL"
+#define SERIAL_NUMBER "JqNpm/6a5XNR"
 #define LAYER_STATE_8BIT
 #define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
 
