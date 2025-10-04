@@ -85,7 +85,7 @@ $(REV_META_JSON):
 $(BUILT_KEYMAP_BIN) $(BUILT_KEYMAP_JSON) $(BUILT_KEYBOARD_JSON) &: $(REV_META_JSON)
 	$(MAKE) build-qmk-image
 	docker run --volume ./'$(BUILD_DIR)':/root/'$(BUILD_DIR)' --volume ./'$(KMDRAWER_DIR)':/root/'$(KMDRAWER_DIR)' --volume ./'$(SOURCE_DIR)':/root/'$(SOURCE_DIR)' --rm '$(QMK_DOCKER_IMAGE)' /bin/sh -c "\
-		git clone --branch 'firmware$(REV_META_FIRMWARE)' --single-branch --recursive '$(QMK_GIT_URL)' '$(QMK_DIR)' \
+		git clone --branch 'firmware$(REV_META_FIRMWARE)' --depth 1 --no-single-branch --recursive '$(QMK_GIT_URL)' '$(QMK_DIR)' \
 			&& cp '$(QMK_KEYBOARD_DIR)/keyboard.json' '$(BUILT_KEYBOARD_JSON)' \
 			&& rm -rf '$(QMK_KEYMAP_DIR)' \
 			&& cp -r '$(SOURCE_DIR)' '$(QMK_KEYMAP_DIR)' \
